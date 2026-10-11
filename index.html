@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>STRESS LAB. — 오늘의 스트레스, 취향대로 풀어봐.</title><style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap');
+:root{--ink:#23234d;--lav:#9b82d7;--light:#f7f4fc;--line:#e9e5f0}*{box-sizing:border-box}body{margin:0;color:var(--ink);font-family:'DM Sans','Noto Sans KR',sans-serif;background:#fff}button,input{font:inherit}button{cursor:pointer}header{height:76px;display:flex;align-items:center;gap:35px;padding:0 max(28px,calc((100vw - 1450px)/2));border-bottom:1px solid #f0edf6;background:#fff;position:sticky;top:0;z-index:20}.logo{font-size:25px;font-weight:800;color:#8571b7;white-space:nowrap;cursor:pointer}.logo span{font-size:26px;margin-right:8px}nav{display:flex;gap:32px;margin:auto}nav button{background:none;border:0;font-size:12px;font-weight:700;color:var(--ink);letter-spacing:.06em}nav button:hover{color:var(--lav)}.search{border:1px solid #e1dceb;border-radius:24px;padding:10px 15px;display:flex;gap:8px;align-items:center;max-width:230px}.search input{border:0;outline:0;width:170px;font-size:11px}.head-actions{display:flex;gap:16px}.iconbtn{border:0;background:none;font-size:23px;color:var(--ink);position:relative}.count{position:absolute;right:-5px;top:-4px;background:#8d72dc;color:white;font-size:10px;border-radius:20px;padding:2px 5px}main{max-width:1450px;margin:auto;padding:22px 26px 80px}.hero{height:395px;border-radius:22px;overflow:hidden;background:linear-gradient(95deg,#f0ebf8 0%,#f6f0f9 48%,#e9ddf4 100%);position:relative;display:flex;align-items:center}.hero::after{content:'';position:absolute;inset:0 0 0 42%;background:url('assets/hero-enhanced.webp') center center/cover no-repeat;mask-image:linear-gradient(to right,transparent,#000 28%)}.hero-text{z-index:1;padding:55px;max-width:530px}.eyebrow{letter-spacing:.3em;font-size:11px}.hero h1{font-size:42px;line-height:1.42;font-weight:600;letter-spacing:-.06em;margin:22px 0}.hero p{line-height:1.8;font-size:15px}.primary{background:#a58bd9;border:0;color:white;border-radius:30px;padding:14px 27px;font-weight:700}.primary:hover{background:#8e72ca}.section{margin-top:32px}.sectionhead{display:flex;align-items:center;gap:20px;margin-bottom:18px}.sectionhead h2{margin:0;font-size:24px;letter-spacing:-.04em}.sectionhead p{font-size:12px;color:#77718e}.sectionhead button{margin-left:auto;border:0;background:none;color:#60518d;font-size:12px}.mbtis{display:grid;grid-template-columns:repeat(16,minmax(0,1fr));gap:8px}.mbti{border:0;background:linear-gradient(145deg,#f1e9fb,#faf7ff);border-radius:12px;padding:10px 2px 12px;min-width:0;color:var(--ink);font-weight:700;font-size:11px}.mbti:nth-child(4n+2){background:#edf4ff}.mbti:nth-child(4n+3){background:#fff0f5}.mbti:nth-child(4n+4){background:#fff3e9}.mbti img{width:100%;height:57px;object-fit:cover;object-position:center 42%;border-radius:50%;max-width:60px;mix-blend-mode:multiply}.mbti:hover{outline:2px solid #aa90e0}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:23px}.feature{height:178px;border-radius:14px;background-size:cover;background-position:center;overflow:hidden;position:relative;padding:27px;cursor:pointer}.feature:before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#f5eafa 0%,#f7eff8cc 36%,transparent 85%)}.feature:nth-child(2):before{background:linear-gradient(90deg,#eeebff 0%,#eeeaffcc 38%,transparent 85%)}.feature:nth-child(3):before{background:linear-gradient(90deg,#eaf2ff 0%,#eaf2ffcc 38%,transparent 85%)}.feature>div{position:relative}.feature small{font-size:12px}.feature h3{font-size:23px;margin:3px 0 18px}.feature button{border:0;background:#ffffffd9;border-radius:30px;padding:10px 19px;font-size:12px;color:#51437c}.products{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px}.product{border:1px solid #ebe7f0;border-radius:12px;overflow:hidden;cursor:pointer;background:white;transition:transform .2s}.product:hover{transform:translateY(-4px);box-shadow:0 10px 25px #4b337012}.photo{background:#f3eff7;aspect-ratio:1/1;position:relative}.photo img{width:100%;height:100%;object-fit:cover}.heart{position:absolute;right:9px;top:9px;background:#fff;border:0;border-radius:50%;width:29px;height:29px;font-size:17px}.prodinfo{padding:12px}.prodinfo strong{display:block;font-size:13px}.prodinfo p{margin:5px 0 8px;font-size:13px;font-weight:700}.tag{font-size:10px;background:#a28ae0;color:#fff;border-radius:12px;padding:3px 8px}.dots{color:#a58ad4;font-size:13px;letter-spacing:3px}.story{margin-top:45px;border-radius:20px;min-height:260px;background:#f7f1fa;padding:52px 45px}.story h2{color:#866cc5}.story p{font-size:13px;line-height:1.9}.story button{background:transparent;border:1px solid #aa91d9;padding:12px 20px;border-radius:25px;color:#6e5ba3}footer{border-top:1px solid var(--line);padding:35px;text-align:center;color:#938ba5;font-size:12px}.overlay{position:fixed;inset:0;background:#25213b77;z-index:40;display:flex;align-items:center;justify-content:center;padding:20px}.modal{background:#fff;border-radius:20px;width:min(860px,100%);max-height:90vh;overflow:auto;position:relative;padding:30px}.close{position:absolute;right:20px;top:16px;border:0;background:none;font-size:26px;z-index:2}.detailgrid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}.detailgrid>img{width:100%;border-radius:16px;background:#f4eef8}.detailgrid h2{font-size:29px}.detailgrid p{line-height:1.8;color:#77718e}.price{font-size:25px;font-weight:800;color:#29244d}.qty{display:inline-flex;align-items:center;gap:20px;border:1px solid var(--line);border-radius:8px;margin:18px 0;padding:8px}.qty button{border:0;background:none;font-size:19px}.wide{width:100%;margin:5px 0}.secondary{background:white;border:1px solid #b39fe0;border-radius:30px;padding:13px 20px;color:#7461aa;font-weight:700}.cartline{display:flex;align-items:center;gap:18px;border-bottom:1px solid var(--line);padding:14px 0}.cartline img{width:85px;height:85px;object-fit:cover;border-radius:10px}.cartline>div{flex:1}.cartline button{border:0;background:#f5f0fa;padding:6px 10px;border-radius:7px}.carttotal{display:flex;justify-content:space-between;font-size:22px;font-weight:800;margin:25px 0}.test{max-width:590px;margin:auto;text-align:center;padding:24px}.test h2{font-size:28px}.test .progress{height:7px;background:#eee8f8;border-radius:10px;margin:24px 0}.test .progress div{height:100%;background:#9b82d7;border-radius:10px}.choice{display:block;width:100%;background:#f9f6fc;border:1px solid #e5dff1;border-radius:12px;padding:18px;margin:12px 0;text-align:left}.choice:hover{background:#eae1f7}.empty{text-align:center;color:#817990;padding:45px 10px}.toast{position:fixed;bottom:25px;left:50%;transform:translateX(-50%);background:#292346;color:white;padding:14px 24px;border-radius:25px;z-index:70;box-shadow:0 6px 20px #2223}#shopview{display:none}.filters{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0}.filters button{border:1px solid #e2d9ef;background:white;border-radius:25px;padding:9px 15px;color:#66598b}.filters button.active{background:#9d83d6;color:white} @media(max-width:1050px){nav{gap:12px}.mbtis{grid-template-columns:repeat(8,1fr)}.products{grid-template-columns:repeat(3,1fr)}.search{display:none}}@media(max-width:650px){header{height:65px;padding:0 16px;gap:12px}.logo{font-size:18px}.logo span{font-size:20px}nav{display:none}.head-actions{margin-left:auto;gap:8px}.iconbtn{font-size:21px}main{padding:15px 15px 55px}.hero{height:355px;align-items:flex-start}.hero::after{inset:36% 0 0 5%;background-size:cover;mask-image:linear-gradient(to bottom,transparent,#000 30%)}.hero-text{padding:25px}.hero h1{font-size:27px;margin:13px 0}.hero p{font-size:12px}.hero .primary{padding:10px 18px;font-size:12px}.sectionhead{gap:8px;flex-wrap:wrap}.sectionhead h2{font-size:19px}.sectionhead p{font-size:11px}.mbtis{grid-template-columns:repeat(4,1fr)}.mbti img{height:58px}.features{grid-template-columns:1fr}.feature{height:165px}.products{grid-template-columns:repeat(2,1fr);gap:9px}.prodinfo{padding:9px}.story{background-size:auto 80%;background-position:right bottom;padding:30px 20px;min-height:250px}.story p{max-width:55%}.detailgrid{grid-template-columns:1fr}.modal{padding:22px}.detailgrid>img{max-height:260px;object-fit:contain}}
+
+/* Readable typography, safe image sizing, and footer exploration CTA */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{font-family:'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',system-ui,sans-serif;word-break:keep-all;-webkit-font-smoothing:antialiased}
+h1,h2,h3,p,button,a{overflow-wrap:break-word}
+.hero h1{letter-spacing:-.045em}
+.hero::after{background-position:center center}
+.photo{overflow:hidden}
+.photo img{display:block;object-fit:contain;padding:8px;image-rendering:auto}
+.product .photo{background:linear-gradient(145deg,#faf7fc,#f0ebf7)}
+.mbti img{object-fit:contain;mix-blend-mode:normal}
+.detailgrid>img{object-fit:contain;max-height:460px}
+.feature{background-image:none!important;background-color:#f2eafa}
+.feature:nth-child(2){background-color:#efebff}
+.feature:nth-child(3){background-color:#eaf2ff}
+.feature:before{background:linear-gradient(90deg,#f4eaf9 0%,#f4eaf9 50%,transparent 100%)!important}
+.feature:after{content:'';position:absolute;right:8px;bottom:0;width:43%;height:95%;background:url('assets/mascot-enhanced.webp') center bottom/contain no-repeat;pointer-events:none}
+.feature:nth-child(2):after{filter:hue-rotate(24deg)}
+.feature:nth-child(3):after{filter:hue-rotate(-18deg)}
+.explore-banner{margin-top:54px;min-height:315px;position:relative;overflow:hidden;border-radius:24px;display:flex;align-items:center;background:linear-gradient(105deg,#eae1f8 0%,#f7eefa 58%,#e7e9ff 100%);padding:48px clamp(24px,6vw,80px)}
+.explore-copy{position:relative;z-index:1}
+.explore-kicker{display:block;color:#8270af;font-size:11px;letter-spacing:.22em;font-weight:800}
+.explore-copy h2{font-size:clamp(30px,3.8vw,50px);line-height:1.35;letter-spacing:-.045em;margin:16px 0;color:#29244d}
+.explore-copy p{font-size:14px;line-height:1.9;color:#615a78;margin:0 0 24px}
+.explore-link{display:inline-flex;align-items:center;gap:24px;border-radius:40px;background:#9278d0;color:white;text-decoration:none;font-size:14px;font-weight:800;padding:15px 26px;transition:background .2s,transform .2s}
+.explore-link:hover,.explore-link:focus-visible{background:#755cba;transform:translateY(-2px)}
+.explore-art{position:absolute;right:5%;bottom:-15%;height:110%;width:42%;display:flex;justify-content:center;align-items:end;pointer-events:none}
+.explore-art img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 18px 18px #8e78bb25)}
+@media(max-width:650px){.explore-banner{min-height:430px;padding:32px 24px;align-items:flex-start}.explore-copy h2{font-size:32px}.explore-copy p{font-size:12px;max-width:260px}.explore-art{height:60%;width:70%;right:-7%;bottom:-7%}.feature:after{width:42%}.photo img{padding:4px}}
+
+/* Preserve fixed layout and original hero. Only replace artwork in individual sections. */
+.hero::before{content:none!important}.hero::after{background:url('assets/hero-enhanced.webp') center center/cover no-repeat!important;opacity:1!important;mask-image:linear-gradient(to right,transparent,#000 28%)!important}
+.mbti img{height:62px!important;max-width:75px!important;width:100%!important;object-fit:contain!important;object-position:center!important;mix-blend-mode:normal!important;filter:none!important;border-radius:0!important}
+.feature{background-size:cover!important;background-position:center!important}.feature:after{display:none!important}
+.feature:before{background:linear-gradient(90deg,rgba(249,240,250,.98) 0%,rgba(249,240,250,.92) 33%,transparent 68%)!important}
+.feature:nth-child(2):before{background:linear-gradient(90deg,rgba(238,233,255,.98) 0%,rgba(238,233,255,.9) 33%,transparent 68%)!important}
+.feature:nth-child(3):before{background:linear-gradient(90deg,rgba(231,243,255,.98) 0%,rgba(231,243,255,.9) 33%,transparent 68%)!important}
+.product .tag{display:none!important}.photo img{object-fit:cover!important;object-position:center!important;padding:0!important}
+.story{background:#f4ecfb url('assets/custom-story.webp') right center/auto 100% no-repeat!important;isolation:isolate}
+.story:after{content:none!important}.story p{max-width:47%}
+.brand-story{max-width:650px;margin:auto;padding:18px}.brand-story small{letter-spacing:.2em;color:#9578ca}.brand-story h2{font-size:clamp(23px,3.4vw,34px)}.brand-story p{font-size:15px;line-height:2;color:#665d7c}
+.explore-banner{background:#eee6fa url('assets/custom-footer.webp') center/cover no-repeat!important;justify-content:center!important;text-align:center!important;min-height:270px!important}
+.explore-copy{background:rgba(250,247,255,.55);border-radius:22px;padding:12px 26px;backdrop-filter:blur(3px)}.explore-art{display:none!important}.explore-copy h2{font-size:clamp(28px,3.2vw,44px)!important}
+@media(max-width:650px){.mbti img{height:64px!important}.story{background-size:auto 80%!important;background-position:right bottom!important}.explore-banner{min-height:360px!important;background-position:center!important}.explore-copy{padding:18px 12px}.explore-copy p{max-width:none!important}}
+
+/* Updated generated STRESS LAB illustrations: no embedded copy or buttons. */
+.story{background:#f0e7fa url('assets/story-new.webp') center center/100% 100% no-repeat!important;min-height:300px!important;position:relative!important}
+.story:after{display:none!important;content:none!important}
+.story h2,.story p,.story button{position:relative;z-index:2}
+.explore-banner{background:#f1e9fc url('assets/explore-new.webp') center center/100% 100% no-repeat!important;min-height:350px!important;display:flex!important;align-items:center!important;justify-content:center!important;text-align:center!important;padding:35px 20px!important}
+.explore-copy{position:relative!important;z-index:3!important;max-width:520px!important}
+.explore-copy h2{font-size:clamp(28px,3.4vw,46px)!important}
+.explore-art{display:none!important}
+@media(max-width:650px){.story{background-size:auto 100%!important;background-position:58% center!important;min-height:270px!important;padding:30px 20px!important}.story h2,.story p{max-width:56%!important}.explore-banner{background-size:auto 100%!important;min-height:370px!important}.explore-copy{background:#f6f0f9d9;border-radius:20px;padding:15px!important}.explore-copy h2{font-size:27px!important}}
+
+/* Responsive banner repair: preserve source aspect ratio; never stretch the art. */
+.story{
+  background-image:url('assets/story-new.webp')!important;
+  background-size:contain!important;
+  background-repeat:no-repeat!important;
+  background-position:center center!important;
+  background-color:#f0e7fa!important;
+  aspect-ratio:1400 / 440;
+  min-height:0!important;
+  padding:clamp(18px,3.2vw,52px) clamp(20px,3.3vw,45px)!important;
+  display:flex;flex-direction:column;justify-content:center;
+}
+.story h2,.story p,.story button{flex-shrink:0}
+.story button{align-self:flex-start}
+.explore-banner{
+  background-image:url('assets/explore-new.webp')!important;
+  background-size:contain!important;
+  background-repeat:no-repeat!important;
+  background-position:center center!important;
+  background-color:#f1e9fc!important;
+  aspect-ratio:1500 / 430;
+  min-height:0!important;
+  padding:clamp(14px,2.5vw,35px) 20px!important;
+}
+.explore-copy{flex-shrink:0}
+@media(max-width:700px){
+  .story{aspect-ratio:auto;min-height:290px!important;background-size:contain!important;background-position:center bottom!important;justify-content:flex-start;padding:22px!important}
+  .story h2{font-size:22px!important;margin:0 0 10px}
+  .story p{font-size:12px!important;max-width:65%!important;margin:0 0 12px}
+  .story button{font-size:12px;padding:9px 14px}
+  .explore-banner{aspect-ratio:auto;min-height:365px!important;background-size:contain!important;background-position:center bottom!important;align-items:flex-start!important;padding:20px 14px!important}
+  .explore-copy{max-width:100%!important;padding:14px!important;background:rgba(250,247,255,.83)!important}
+  .explore-copy h2{font-size:26px!important;margin:8px 0!important}
+  .explore-copy p{font-size:11px!important;margin:5px 0 12px!important}
+  .explore-link{padding:10px 18px!important}
+}
+
+/* MBTI cards: square source assets with their labels embedded, no duplicate HTML label. */
+.mbtis{gap:7px}
+.mbti{aspect-ratio:1/1!important;min-height:0!important;padding:0!important;overflow:hidden!important;background:#fff!important;border:1px solid #f0edf6!important;display:block!important;line-height:0!important;border-radius:12px!important;transition:transform .2s,box-shadow .2s}
+.mbti:hover{transform:translateY(-3px);box-shadow:0 8px 18px #a18cc02b}
+.mbti img{display:block!important;width:100%!important;height:100%!important;max-width:none!important;max-height:none!important;object-fit:contain!important;object-position:center!important;border-radius:0!important;mix-blend-mode:normal!important;filter:none!important}
+@media(max-width:850px){.mbtis{grid-template-columns:repeat(8,minmax(0,1fr))!important}}
+@media(max-width:480px){.mbtis{grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:6px!important}}
+
+/* Original supplied art is a single image per banner: NEVER crop or stretch it. */
+section.story:has(> .exact-banner-image),
+section.explore-banner:has(> .exact-banner-image){
+ position:relative!important;display:block!important;width:100%!important;height:auto!important;
+ min-height:0!important;max-height:none!important;aspect-ratio:auto!important;
+ padding:0!important;margin:0!important;overflow:hidden!important;
+ border-radius:clamp(12px,2vw,24px)!important;background:transparent!important;
+ background-image:none!important;box-shadow:none!important;
+}
+section.story:has(> .exact-banner-image)::before,
+section.story:has(> .exact-banner-image)::after,
+section.explore-banner:has(> .exact-banner-image)::before,
+section.explore-banner:has(> .exact-banner-image)::after{content:none!important;display:none!important}
+section.story > img.exact-banner-image,
+section.explore-banner > img.exact-banner-image{
+ display:block!important;width:100%!important;height:auto!important;max-width:100%!important;
+ min-height:0!important;aspect-ratio:auto!important;object-fit:contain!important;
+ object-position:center!important;transform:none!important;filter:none!important;
+}
+.exact-banner-hotspot{position:absolute!important;z-index:5!important;display:block!important;
+ background:transparent!important;border:0!important;padding:0!important;cursor:pointer!important;
+ border-radius:40px!important;min-height:0!important;min-width:0!important}
+.exact-banner-hotspot:focus-visible{outline:3px solid #7759d6!important;outline-offset:3px!important}
+.story-hotspot{left:1.8%!important;top:58%!important;width:19%!important;height:18%!important}
+.explore-hotspot{left:41%!important;top:62%!important;width:18%!important;height:16%!important}
+@media(max-width:700px){
+ section.story:has(> .exact-banner-image),
+ section.explore-banner:has(> .exact-banner-image){width:100%!important;aspect-ratio:auto!important}
+ .story-hotspot{left:1.8%!important;top:58%!important;width:21%!important;height:20%!important}
+ .explore-hotspot{left:40%!important;top:61%!important;width:20%!important;height:18%!important}
+}
+
+/* Mobile-first artwork: real compositions designed for narrow screens.
+   No blur, stretching, cover cropping, gradients or duplicate text. */
+.mobile-designed-art,.mobile-image-hit{display:none}
+@media(max-width:700px){
+  #homeview .hero,#homeview .story,section.explore-banner{
+    display:block!important;position:relative!important;
+    width:100%!important;min-height:0!important;height:auto!important;
+    aspect-ratio:auto!important;margin:0 0 24px!important;padding:0!important;
+    overflow:hidden!important;background:none!important;border-radius:18px!important;
+  }
+  #homeview .hero::before,#homeview .hero::after,
+  #homeview .story::before,#homeview .story::after,
+  section.explore-banner::before,section.explore-banner::after{
+    content:none!important;display:none!important
+  }
+  #homeview .hero>.hero-text,
+  #homeview .story>.exact-banner-image,
+  #homeview .story>.exact-banner-hotspot,
+  section.explore-banner>.exact-banner-image,
+  section.explore-banner>.exact-banner-hotspot{display:none!important}
+  #homeview .hero>.mobile-designed-art,
+  #homeview .story>.mobile-designed-art,
+  section.explore-banner>.mobile-designed-art{
+    display:block!important;position:relative!important;
+    width:100%!important;max-width:100%!important;
+    height:auto!important;max-height:none!important;
+    object-fit:contain!important;object-position:center!important;
+    opacity:1!important;filter:none!important;
+    mask-image:none!important;-webkit-mask-image:none!important;
+    transform:none!important;margin:0!important
+  }
+  .mobile-image-hit{
+    display:block!important;position:absolute!important;z-index:10!important;
+    background:transparent!important;border:0!important;border-radius:24px!important;
+    cursor:pointer!important;padding:0!important;min-width:0!important;min-height:0!important;
+  }
+  .mobile-image-hit:focus-visible{outline:3px solid #6950c8!important;outline-offset:3px!important}
+  .hero-hit{left:4%!important;top:59%!important;width:33%!important;height:12%!important}
+  .story-hit{left:5%!important;top:61%!important;width:32%!important;height:19%!important}
+  .explore-hit{left:5%!important;top:63%!important;width:31%!important;height:20%!important}
+  #homeview .features{margin-bottom:20px!important}
+  #homeview .products{margin-bottom:24px!important}
+}
+@media(min-width:701px){
+ .mobile-designed-art,.mobile-image-hit{display:none!important}
+}
+
+/* Explicitly hide PC artwork on small screens: one banner only. */
+@media screen and (max-width:700px){
+ html body main section.explore-banner > img.exact-banner-image,
+ html body main section.explore-banner > a.exact-banner-hotspot,
+ html body main #homeview section.story > img.exact-banner-image,
+ html body main #homeview section.story > button.exact-banner-hotspot{
+ display:none!important;visibility:hidden!important;position:absolute!important;pointer-events:none!important;
+ }
+ html body main section.explore-banner > img.mobile-designed-art,
+ html body main #homeview section.story > img.mobile-designed-art{
+ display:block!important;visibility:visible!important;position:relative!important;
+ width:100%!important;height:auto!important;max-width:100%!important;
+ object-fit:contain!important;filter:none!important;transform:none!important;
+ }
+}
+
+/* One mobile banner per section. No blur, crop, duplicated images or overlaid gradients. */
+@media (max-width:700px) {
+ #homeview section.story, section.explore-banner {
+  display:block!important;position:relative!important;overflow:hidden!important;
+  width:100%!important;height:auto!important;min-height:0!important;
+  aspect-ratio:auto!important;background:transparent!important;background-image:none!important;
+  padding:0!important;margin:24px 0!important;border-radius:20px!important;
+  box-shadow:none!important;
+ }
+ #homeview section.story::before,#homeview section.story::after,
+ section.explore-banner::before,section.explore-banner::after {
+  display:none!important;content:none!important;filter:none!important;
+ }
+ #homeview section.story > :not(.mobile-designed-art):not(.mobile-image-hit),
+ section.explore-banner > :not(.mobile-designed-art):not(.mobile-image-hit) {
+  display:none!important;
+ }
+ #homeview section.story > img.mobile-designed-art,
+ section.explore-banner > img.mobile-designed-art {
+  display:block!important;visibility:visible!important;position:relative!important;
+  inset:auto!important;opacity:1!important;filter:none!important;
+  width:100%!important;max-width:100%!important;height:auto!important;max-height:none!important;
+  object-fit:contain!important;object-position:center!important;
+  mask-image:none!important;-webkit-mask-image:none!important;
+  transform:none!important;margin:0!important;padding:0!important;border-radius:20px!important;
+ }
+ #homeview section.story > .mobile-image-hit,
+ section.explore-banner > .mobile-image-hit {
+  display:block!important;visibility:visible!important;position:absolute!important;z-index:9!important;
+  border:0!important;background:transparent!important;cursor:pointer!important;
+  padding:0!important;min-width:0!important;min-height:0!important;
+ }
+ #homeview section.story > .story-hit {left:3%!important;top:66%!important;width:31%!important;height:19%!important}
+ section.explore-banner > .explore-hit {left:4%!important;top:66%!important;width:31%!important;height:20%!important}
+}
+@media(min-width:701px){
+ #homeview section.story > .mobile-designed-art,#homeview section.story > .mobile-image-hit,
+ section.explore-banner > .mobile-designed-art,section.explore-banner > .mobile-image-hit{display:none!important}
+}
+
+/* Keep full-bleed square product photography and breathing room before the lower banner. */
+.product .photo{aspect-ratio:1/1!important;overflow:hidden!important}
+.product .photo img{display:block!important;width:100%!important;height:100%!important;object-fit:contain!important}
+#shopview{padding-bottom:clamp(32px,5vw,72px)!important}
+#shopview + .explore-banner{margin-top:clamp(30px,5vw,65px)!important}
+main > .explore-banner{margin-top:clamp(38px,6vw,80px)!important}
+@media(max-width:700px){
+ #shopview{padding-bottom:30px!important}
+ main > .explore-banner{margin-top:28px!important}
+}
+
+/* New square photographs: fill every card with the original scene, no bands or blur. */
+.product .photo img,.photo img{width:100%!important;height:100%!important;object-fit:cover!important;object-position:center!important;padding:0!important;filter:none!important}
+.product .photo{aspect-ratio:1/1!important;overflow:hidden!important}
+#shopview{margin-bottom:40px!important}
+#shopview + .explore-banner{margin-top:40px!important}
+@media(max-width:650px){#shopview{margin-bottom:28px!important}#shopview + .explore-banner{margin-top:28px!important}}
+
+/* Mobile hero: native aspect ratio, no magnification or cover cropping */
+html,body{max-width:100%;overflow-x:clip}
+@media(max-width:700px){
+ main{width:100%;max-width:100%;min-width:0;padding:15px 12px 55px!important}
+ #homeview{width:100%;max-width:100%;min-width:0}
+ #homeview .hero{display:block!important;width:100%!important;max-width:100%!important;min-width:0!important;height:auto!important;min-height:0!important;aspect-ratio:743/483!important;padding:0!important;margin:0 0 24px!important;overflow:hidden!important;border-radius:20px!important;background:none!important}
+ #homeview .hero::before,#homeview .hero::after{display:none!important;content:none!important}
+ #homeview .hero>.hero-text{display:none!important}
+ #homeview .hero>img.mobile-designed-art{display:block!important;position:static!important;visibility:visible!important;width:100%!important;max-width:100%!important;min-width:0!important;height:auto!important;max-height:none!important;aspect-ratio:743/483!important;object-fit:contain!important;object-position:center!important;transform:none!important;scale:1!important;filter:none!important;image-rendering:auto!important;margin:0!important;padding:0!important}
+ #homeview .hero>.hero-hit{display:block!important;position:absolute!important;left:4%!important;top:58%!important;width:35%!important;height:13%!important;z-index:3!important}
+}
+</style></head><body><header><div class="logo" onclick="home()"><span>☁️</span>STRESS LAB.</div><nav><button onclick="home()">HOME</button><button onclick="shop()">SHOP</button><button onclick="openTest()">MBTI</button><button onclick="shop('BEST')">BEST</button><button onclick="shop('NEW')">NEW</button><button onclick="document.getElementById('story').scrollIntoView({behavior:'smooth'})">STORY</button></nav><label class="search">⌕ <input id="search" oninput="searchProducts(this.value)" placeholder="원하는 상품을 검색해보세요"/></label><div class="head-actions"><button class="iconbtn" onclick="openTest()" title="MBTI 테스트">♙</button><button class="iconbtn" onclick="showWishlist()" title="찜 목록">♡</button><button class="iconbtn" onclick="showCart()" title="장바구니">♧<span class="count" id="cartcount">0</span></button></div></header><main><div id="homeview"><section class="hero"><div class="hero-text"><div class="eyebrow">YOUR PERSONAL STRESS LAB</div><h1>오늘의 스트레스,<br/>취향대로 풀어봐.</h1><p>나만의 작은 즐거움이<br/>오늘도 좋은 하루를 만들어.</p><button class="primary" onclick="shop()">쇼핑하러 가기 →</button></div><img alt="STRESS LAB 모바일 메인 배너" class="mobile-designed-art" src="assets/mobile-hero-sharp.png"/><button aria-label="쇼핑하러 가기" class="mobile-image-hit hero-hit" onclick="shop()" type="button"></button></section><section class="section"><div class="sectionhead"><h2>What’s your MBTI?</h2><p>16가지 유형별로 나에게 맞는 스트레스 해소 장난감을 찾아보세요!</p><button onclick="openTest()">테스트하기 →</button></div><div class="mbtis" id="mbtis"></div></section><section class="features"><div class="feature" onclick="shop('BEST')" style="background-image:url('assets/custom-promo-1.webp')"><div><small>지금 가장 사랑받는</small><h3>BEST 상품</h3><button>바로 보기 →</button></div></div><div class="feature" onclick="openTest()" style="background-image:url('assets/custom-promo-2.webp')"><div><small>오늘의 추천</small><h3>STRESS PICK</h3><button>추천 받기 →</button></div></div><div class="feature" onclick="shop('NEW')" style="background-image:url('assets/custom-promo-3.webp')"><div><small>새롭게 만나는</small><h3>NEW ARRIVALS</h3><button>신상품 보기 →</button></div></div></section><section class="section"><div class="sectionhead"><h2>BEST SELLERS</h2><p>지금 가장 사랑받는 인기 상품이에요.</p><button onclick="shop('BEST')">전체 보기 →</button></div><div class="products" id="bests"></div></section><section class="story" id="story"><img alt="STRESS LAB STORY — 마음을 연구하는 작은 실험실, STRESS LAB의 이야기를 만나보세요." class="exact-banner-image" loading="lazy" src="assets/story-exact.png"/><button aria-label="STRESS LAB STORY 자세히 보기" class="exact-banner-hotspot story-hotspot" onclick="showStory()" type="button"></button><img alt="STRESS LAB 모바일 배너" class="mobile-designed-art" src="assets/story-soft-mobile.webp"/><button aria-label="자세히 보기" class="mobile-image-hit story-hit" onclick="showStory()" type="button"></button></section></div><div id="shopview"><div class="sectionhead"><h2 id="shopheading">ALL PRODUCTS</h2><p>당신에게 딱 맞는 작은 즐거움을 발견해보세요.</p><button onclick="home()">홈으로 →</button></div><div class="filters" id="filters"></div><div class="products" id="allproducts"></div></div>
+<section aria-labelledby="explore-title" class="explore-banner"><img alt="스트레스에도 취향이 있다면? 나에게 맞는 스트레스 해소법을 찾는 작은 실험. 탐색하기." class="exact-banner-image" loading="lazy" src="assets/explore-exact.png"/><a aria-label="스트레스 취향 탐색하기" class="exact-banner-hotspot explore-hotspot" href="https://stress-lab-zeta.vercel.app/" rel="noopener noreferrer" target="_blank"></a><img alt="STRESS LAB 모바일 배너" class="mobile-designed-art" src="assets/explore-soft-mobile.webp"/><a aria-label="탐색하기" class="mobile-image-hit explore-hit" href="https://stress-lab-zeta.vercel.app/" rel="noopener noreferrer" target="_blank"></a></section>
+</main><footer>STRESS LAB. © 2026 · A small break for a better day.</footer><div id="modalroot"></div><script>
+const types=["INTJ","INTP","ENTJ","ENTP","INFJ","INFP","ENFJ","ENFP","ISTJ","ISFJ","ESTJ","ESFJ","ISTP","ISFP","ESTP","ESFP"];const names=["작업 몰입 큐브","마그네틱 빌드볼","플랜 스톱워치","스트레스 버튼 세트","감성 구름 무드등","감정일기 촉감볼","구름 피규어 키링","변신 스트레스 퍼즐","데스크 키보드 토이","포근한 구름 인형","체크리스트 타이머","감정 소통 카드","무한 회전 스피너","아로마 클레이 키트","미니 샌드백 토이","컬러 팝잇 키링"];const prices=[12900,15900,19900,9900,18900,13900,9900,8900,14900,21900,17900,16900,11900,15900,13900,8900];const descriptions=["손끝으로 큐브를 접고 펼치며 생각을 정리해요.","자석 부품을 연결하며 자유롭게 구조를 만들어 봐요.","집중과 휴식의 시간을 눈으로 확인하는 타이머.","각기 다른 감각의 버튼을 눌러보는 촉감 장난감.","은은한 빛과 귀여운 구름 디자인이 만드는 휴식.","말랑한 촉감볼과 함께 감정을 기록하는 시간.","보라색 고글을 쓴 구름 친구를 어디든 데려가요.","구부리고 연결하며 모양을 바꾸는 파스텔 퍼즐.","키보드처럼 톡톡 누르며 손끝의 리듬을 느껴요.","부드러운 구름 인형을 품에 안고 쉬어가요.","작은 버튼과 다이얼을 조작하는 데스크 토이.","서로의 마음을 알아가는 감정 대화 카드.","매끄럽게 돌아가는 메탈 피젯스피너.","부드러운 클레이를 손으로 빚으며 몰입해요.","손으로 가볍게 누르는 스프링 데스크 토이.","알록달록 실리콘 버블을 톡톡 눌러봐요."];const products=types.map((type,i)=>({id:i,name:names[i],price:prices[i],img:"assets/toy-"+type+".png",type,description:descriptions[i]}));let cart=JSON.parse(localStorage.getItem('stresslab_cart')||'{}'),wishlist=JSON.parse(localStorage.getItem('stresslab_wish')||'[]'),currentFilter='ALL',quantity=1,step=0,answers=[];const won=n=>n.toLocaleString('ko-KR')+'원';function save(){localStorage.setItem('stresslab_cart',JSON.stringify(cart));localStorage.setItem('stresslab_wish',JSON.stringify(wishlist));document.getElementById('cartcount').textContent=Object.values(cart).reduce((a,b)=>a+b,0)}function toast(msg){let e=document.createElement('div');e.className='toast';e.textContent=msg;document.body.appendChild(e);setTimeout(()=>e.remove(),2300)}function card(p,i){return `<article class="product" onclick="detail(${p.id})"><div class="photo"><img src="${p.img}" alt="${p.name}"><button class="heart" onclick="event.stopPropagation();wish(${p.id})">${wishlist.includes(p.id)?'♥':'♡'}</button></div><div class="prodinfo"><strong style="margin-top:7px">${p.name}</strong><p>${won(p.price)}</p><div class="dots">◉ ◉ ◉</div></div></article>`}function render(){document.getElementById('mbtis').innerHTML=types.map((t,i)=>`<button class="mbti" onclick="shop('${t}')"><img src="assets/mbti-${t}-square.webp" alt="${t} 캐릭터 카드"></button>`).join('');document.getElementById('bests').innerHTML=products.slice(0,6).map(card).join('');document.getElementById('filters').innerHTML=['ALL','BEST','NEW',...types].map(t=>`<button class="${currentFilter===t?'active':''}" onclick="shop('${t}')">${t}</button>`).join('');let items=currentFilter==='ALL'?products:currentFilter==='BEST'?products.slice(0,6):currentFilter==='NEW'?products.slice(6,12):products.filter(p=>p.type===currentFilter);document.getElementById('allproducts').innerHTML=items.map(card).join('');save()}function home(){document.getElementById('homeview').style.display='block';document.getElementById('shopview').style.display='none';window.scrollTo(0,0)}function shop(filter='ALL'){currentFilter=filter;document.getElementById('homeview').style.display='none';document.getElementById('shopview').style.display='block';document.getElementById('shopheading').textContent=filter==='ALL'?'ALL PRODUCTS':filter+' COLLECTION';render();window.scrollTo(0,0)}function searchProducts(q){shop();const matches=products.filter(p=>(p.name+' '+p.type).toLowerCase().includes(q.toLowerCase()));document.getElementById('allproducts').innerHTML=matches.length?matches.map(card).join(''):'<div class="empty">검색 결과가 없어요.</div>'}function modal(html){document.getElementById('modalroot').innerHTML=`<div class="overlay" onclick="if(event.target===this)closeModal()"><div class="modal"><button class="close" onclick="closeModal()">×</button>${html}</div></div>`}function showStory(){modal(`<div class="brand-story"><small>OUR STORY · STRESS LAB</small><h2>우리의 작은 실험은 꿈에서 시작됐어요.</h2><p>STRESS LAB은 경북대학교 학생들이 만나 각자의 꿈을 펼쳐 나가는 과정에서 시작한 프로젝트입니다.</p><p>우리는 일상 속 스트레스를 어떻게 더 즐겁게 해소할 수 있을까 함께 고민했어요. 누구에게나 같은 방법이 통하지는 않으니까요. 말랑한 촉감을 좋아하는 사람, 손끝으로 움직이는 퍼즐을 좋아하는 사람, 조용한 휴식을 좋아하는 사람까지.</p><p>그렇게 사람마다 다른 취향과 성향에 맞춘 스트레스 해소 장난감을 구상하기 시작했습니다. STRESS LAB은 당신의 하루에 작지만 기분 좋은 쉼표를 선물하고 싶습니다.</p><button class="primary" onclick="closeModal();openTest()">나의 취향 찾아보기 →</button></div>`)}function closeModal(){document.getElementById('modalroot').innerHTML=''}function wish(id){wishlist=wishlist.includes(id)?wishlist.filter(x=>x!==id):[...wishlist,id];render();toast(wishlist.includes(id)?'찜 목록에 추가했어요 ♡':'찜 목록에서 제외했어요')}function showWishlist(){let a=products.filter(p=>wishlist.includes(p.id));modal(`<h2>♡ 나의 찜 목록</h2>${a.length?`<div class="products" style="grid-template-columns:repeat(auto-fit,minmax(135px,1fr))">${a.map(card).join('')}</div>`:'<div class="empty">아직 찜한 상품이 없어요.</div>'}`)}function detail(id){const p=products[id];quantity=1;modal(`<div class="detailgrid"><img src="${p.img}" alt="${p.name}"><div><span class="tag">${p.type} PICK</span><h2>${p.name}</h2><p>${p.description}</p><div class="price">${won(p.price)}</div><p>추천 MBTI · ${p.type}<br>파스텔 컬러 감각 스트레스 토이</p><div class="qty"><button onclick="changeQty(-1)">−</button><span id="qty">1</span><button onclick="changeQty(1)">+</button></div><button class="primary wide" onclick="addCart(${id},quantity)">장바구니 담기</button><button class="secondary wide" onclick="wish(${id})">♡ 찜하기</button><small style="color:#999">* 시제품 상품이며 실제 주문은 진행되지 않습니다.</small></div></div>`)}function changeQty(n){quantity=Math.max(1,quantity+n);document.getElementById('qty').textContent=quantity}function addCart(id,n=1){cart[id]=(cart[id]||0)+n;save();toast('장바구니에 상품을 담았어요!');closeModal()}function changeCart(id,n){cart[id]=Math.max(0,(cart[id]||0)+n);if(!cart[id])delete cart[id];save();showCart()}function showCart(){const ids=Object.keys(cart),total=ids.reduce((s,id)=>s+products[id].price*cart[id],0);modal(`<h2>🛍 장바구니</h2>${ids.length?ids.map(id=>{let p=products[id];return `<div class="cartline"><img src="${p.img}"><div><strong>${p.name}</strong><p>${p.type} · ${won(p.price)}</p><button onclick="changeCart(${id},-1)">−</button> ${cart[id]} <button onclick="changeCart(${id},1)">+</button></div><strong>${won(p.price*cart[id])}</strong></div>`}).join('')+`<div class="carttotal"><span>총 상품 금액</span><span>${won(total)}</span></div><button class="primary wide" onclick="toast('현재는 시제품으로 실제 결제를 지원하지 않아요.')">주문하기 (데모)</button>`:'<div class="empty">장바구니가 비어 있어요.<br>마음에 드는 장난감을 담아보세요!</div>'}`)}const questions=[['사람들과 함께한 하루가 끝나면?', '친구들과 더 이야기하고 싶다','혼자 조용히 쉬고 싶다'],['새로운 장난감을 고를 때?', '새로운 가능성과 아이디어가 끌린다','실용성과 사용감을 먼저 살핀다'],['고민하는 친구에게 나는?', '해결책을 먼저 제안한다','마음부터 공감해준다'],['하루의 스트레스 해소 계획은?', '미리 정한 방식대로 즐긴다','그때그때 끌리는 걸 고른다']];function openTest(){step=0;answers=[];showQuestion()}function showQuestion(){if(step===4){let result=(answers[0]?'I':'E')+(answers[1]?'S':'N')+(answers[2]?'F':'T')+(answers[3]?'P':'J');let p=products.find(x=>x.type===result);modal(`<div class="test"><h2>당신의 MBTI는 ${result}!</h2><p>오늘의 스트레스 해소 추천 상품</p><img src="${p.img}" style="width:200px;border-radius:18px"><h3>${p.name}</h3><p>${p.description}</p><button class="primary" onclick="detail(${p.id})">추천 상품 보기 →</button><br><br><button class="secondary" onclick="openTest()">다시 테스트하기</button></div>`);return}let q=questions[step];modal(`<div class="test"><small>STRESS LAB · MBTI MINI TEST</small><div class="progress"><div style="width:${step*25}%"></div></div><p>QUESTION ${step+1} / 4</p><h2>${q[0]}</h2><button class="choice" onclick="answer(0)">A. ${q[1]}</button><button class="choice" onclick="answer(1)">B. ${q[2]}</button><p style="font-size:12px;color:#aaa">재미로 즐기는 간단한 성향 테스트예요.</p></div>`)}function answer(a){answers.push(a);step++;showQuestion()}render();
+</script></body></html>
